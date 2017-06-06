@@ -3,9 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PersonalWebsite</title>
-    <meta name="description" content="">
+    <title>Bryan Memeti</title> <!-- changed the title name -->
+    <meta name="description" content="Bryan Memeti's personal website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  start of imported -->
+    <link href="app/resources/css/style.css" rel="stylesheet">
+    <link href="app/resources/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="app/resources/js/jquery-3.2.1.js"></script>
+    <script src="app/resources/bootstrap/js/bootstrap.min.js"></script>
+    <!-- end of scripts imported -->
 
     {{content-for "head"}}
 
@@ -15,6 +22,67 @@
     {{content-for "head-footer"}}
   </head>
   <body>
+
+    <!--start of imported body content -->
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">BRYAN MEMETI'S</span> WEBPAGE</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><span class="current"><a href="index.html">HOME</a></li>
+            <li><a href="file:///home/bryan/Documents/projects/memetibryan.github.io/index.html">MY PORTFOLIO</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">SERVICES</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h3>Leading Programmer in Kenya</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed ultrices diam. Aliquam non quam et nisi fermentum condimentum. Proin laoreet mauris sapien, nec scelerisque sapien rhoncus quis. Quisque a dignissim mi. Nulla convallis lacus sit
+          amet felis convallis pellentesque. Nulla facilisi. Aliquam lacus arcu, egestas at augue ac, convallis porttitor nisl</p>
+      </div>
+    </section>
+
+    <section id="newsletter">
+      <div class="container">
+        <h4>Subscribe To Our Newsletter</h4>
+        <form>
+          <input type="email" placeholder="Enter Email">
+          <button type="submit" class="button1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxes">
+      <div class="container">
+        <div class="box">
+          <h5>HTML5 Markup</h5>
+          <img src="images/html.jpg">
+          <p>HyperText MarkUp Language 5.</p>
+        </div>
+        <div class="box">
+          <h5>CSS3 Styling</h5>
+          <img src="images/css.png">
+          <p>Cascading Styles Sheets 3.</p>
+        </div>
+        <div class="box">
+          <h5>Graphic Design</h5>
+          <img src="images/design.png">
+          <p>Graphic Designs.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>BRYAN MEMETI'S WEBPAGE, copyright &copy; 2017</p>
+    </footer>
+    <!--end of imported body content -->
+
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
